@@ -1,0 +1,12 @@
+{% include "./base.html" %}
+
+{% block content %}
+    <h1>Persona List</h1>
+    <ul>
+{% for persona in persona_list %}
+        <li>{{persona}}</li>
+{% empty %}
+        <li>No hay elementos</li>
+{% endfor %}
+    </ul>
+{% endblock content %}
